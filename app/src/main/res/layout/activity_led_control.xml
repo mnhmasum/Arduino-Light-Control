@@ -63,7 +63,7 @@
         android:layout_alignTop="@+id/dis_btn"
         android:layout_alignParentRight="true"
         android:text="About"
-        android:textColor="#FFFFFF"
+        android:textColor="#A8A7A6"
         android:textSize="20sp" />
 
 
