@@ -23,28 +23,25 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
+    <Button
+        android:id="@+id/off_btn"
+        android:layout_width="220dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/on_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="24dp"
+        android:text="LIGHT ON" />
 
     <Button
         android:id="@+id/on_btn"
         android:layout_width="220dp"
-        android:layout_height="wrap_content"
+        android:layout_height="64dp"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-
-        android:text="ON"
-
-        android:textSize="20sp" />
-
-    <Button
-        android:id="@+id/off_btn"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/on_btn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="8dp"
-        android:textSize="20dp"
-        android:text="OFF" />
+        android:text="LIGHT OFF"
+        android:textSize="24sp" />
 
 
     <Button
