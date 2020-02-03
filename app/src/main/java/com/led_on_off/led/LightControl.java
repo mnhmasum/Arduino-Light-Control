@@ -1,6 +1,5 @@
 package com.led_on_off.led;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -21,7 +20,7 @@ import java.io.IOException;
 import java.util.UUID;
 
 
-public class ledControl extends AppCompatActivity {
+public class LightControl extends AppCompatActivity {
 
     // Button btnOn, btnOff, btnDis;
     Button On, Off, Discnt, Abt;
@@ -40,7 +39,7 @@ public class ledControl extends AppCompatActivity {
         Intent newint = getIntent();
         address = newint.getStringExtra(DeviceList.EXTRA_ADDRESS); //receive the address of the bluetooth device
 
-        //view of the ledControl
+        //view of the LightControl
         setContentView(R.layout.activity_led_control);
 
         //call the widgets
@@ -52,7 +51,7 @@ public class ledControl extends AppCompatActivity {
         Abt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ledControl.this, AboutActivity.class);
+                Intent i = new Intent(LightControl.this, AboutActivity.class);
                 startActivity(i);
             }
         });
@@ -107,6 +106,7 @@ public class ledControl extends AppCompatActivity {
         if (btSocket != null) {
             try {
                 btSocket.getOutputStream().write("0".toString().getBytes());
+                Toast.makeText(this, "Light is ON", Toast.LENGTH_SHORT).show();
             } catch (IOException e) {
                 msg("Error");
             }
@@ -117,6 +117,7 @@ public class ledControl extends AppCompatActivity {
         if (btSocket != null) {
             try {
                 btSocket.getOutputStream().write("1".toString().getBytes());
+                Toast.makeText(this, "Light is Off", Toast.LENGTH_SHORT).show();
             } catch (IOException e) {
                 msg("Error");
             }
@@ -157,7 +158,7 @@ public class ledControl extends AppCompatActivity {
 
         @Override
         protected void onPreExecute() {
-            progress = ProgressDialog.show(ledControl.this, "Connecting...", "Please wait!!!");  //show a progress dialog
+            progress = ProgressDialog.show(LightControl.this, "Connecting...", "Please wait!!!");  //show a progress dialog
         }
 
         @Override
