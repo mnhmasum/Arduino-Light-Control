@@ -23,8 +23,8 @@
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
 
-
     <Button
+<<<<<<< HEAD
         android:id="@+id/on_btn"
         android:layout_width="100dp"
         android:layout_height="120dp"
@@ -47,6 +47,26 @@
         android:backgroundTint="#999"
         android:text="OFF"
         android:textSize="20dp" />
+=======
+        android:id="@+id/off_btn"
+        android:layout_width="220dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/on_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="24dp"
+        android:text="LIGHT ON" />
+
+    <Button
+        android:id="@+id/on_btn"
+        android:layout_width="220dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="LIGHT OFF"
+        android:textSize="24sp" />
+>>>>>>> fb1b1757499461eee5fe2c51d09545eeda898112
 
 
     <Button

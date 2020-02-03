@@ -56,6 +56,7 @@ public class LightControl extends AppCompatActivity {
             }
         });
 
+        //Disconnect();
         new ConnectBT().execute(); //Call the class to connect
 
         //commands to be sent to bluetooth
@@ -85,7 +86,7 @@ public class LightControl extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        Disconnect();
+        //Disconnect();
         super.onDestroy();
     }
 
