@@ -63,14 +63,14 @@ public class LightControl extends AppCompatActivity {
         On.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                turnOnLed();      //method to turn on
+                turnOffLed();      //method to turn on
             }
         });
 
         Off.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                turnOffLed();   //method to turn off
+                turnOnLed();   //method to turn off
             }
         });
 
