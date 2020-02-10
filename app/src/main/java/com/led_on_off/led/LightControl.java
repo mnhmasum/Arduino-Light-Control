@@ -86,7 +86,7 @@ public class LightControl extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        //Disconnect();
+        Disconnect();
         super.onDestroy();
     }
 
