@@ -5,7 +5,7 @@ android {
     buildToolsVersion "21.1.2"
 
     defaultConfig {
-        applicationId "com.led.led_on_off"
+        applicationId "com.moonlight.smartlight"
         minSdkVersion 14
         targetSdkVersion 26
         versionCode 1

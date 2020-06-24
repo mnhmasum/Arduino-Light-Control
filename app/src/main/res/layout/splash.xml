@@ -11,27 +11,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:padding="10dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_horizontal"
-            android:tint="#FFFFFF"
-            android:src="@drawable/led" />
+            android:src="@drawable/ic_idea"
+            android:tint="#FFFFFF" />
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="15dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
             android:fontFamily="sans-serif-smallcaps"
-            android:gravity="bottom"
-            android:text="LED Controller"
+            android:gravity="center_vertical"
+            android:text="Smart Light Controller"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textColor="#FFFFFF"
             android:textSize="20dp" />
