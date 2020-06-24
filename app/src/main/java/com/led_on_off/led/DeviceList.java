@@ -57,6 +57,8 @@ public class DeviceList extends Activity
                 startActivityForResult(turnBTon,1);
         }
 
+        pairedDevicesList();
+
         btnPaired.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
