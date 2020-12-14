@@ -80,8 +80,13 @@ public class LightControl extends AppCompatActivity {
                 Disconnect(); //close connection
             }
         });
+    }
 
 
+    @Override
+    protected void onPause() {
+        finish();
+        super.onPause();
     }
 
     @Override
