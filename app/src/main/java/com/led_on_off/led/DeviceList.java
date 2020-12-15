@@ -63,6 +63,8 @@ public class DeviceList extends Activity {
             btnPaired.callOnClick();
         }
 
+        pairedDevicesList();
+
     }
 
     private void pairedDevicesList() {
